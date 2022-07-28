@@ -1,0 +1,4 @@
+- Rock Paper Scissors game
+- Clone my project:
+- `git clone https://github.com/MrPenguin797979/rock-paper-scissors.git`
+- Good luck!

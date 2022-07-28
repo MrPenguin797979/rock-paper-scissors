@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock - Paper - Scissors</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/png" href="./favicon/favicon.ico" />
+
+    <meta property="og:title" content="Rock - Paper - Scissors" />
+    <meta property="og:description" content="Rock Paper Scissors game" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:image"
+      content="https://bit.ly/rock-paper-scissors-image"
+    />
+    <meta property="og:locale" content="vi_VN" />
+
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="choose">
+          <label for="difficulty">Choose difficulty</label>
+
+          <select id="difficulty">
+            <option value="10">Easy</option>
+            <option value="5">Medium</option>
+            <option value="3">Hard</option>
+            <option value="2">Extreme</option>
+          </select>
+        </div>
+
+        <div class="score">
+          <div class="score-item">
+            <h3 class="score-name">You</h3>
+            <span class="score-value score-user">0</span>
+          </div>
+          <div class="score-item">
+            <h3 class="score-name">Computer</h3>
+            <span class="score-value score-computer">0</span>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card" data-item="rock">
+            <img src="./img/rock.png" alt="" />
+          </div>
+          <div class="card" data-item="paper">
+            <img src="./img/paper.png" alt="" />
+          </div>
+          <div class="card" data-item="scissors">
+            <img src="./img/scissors.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

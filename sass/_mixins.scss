@@ -1,0 +1,12 @@
+@mixin textGradient($color1, $color2) {
+  background-image: linear-gradient(to right, $color1, $color2);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@mixin maxWidth($maxWidth) {
+  @media screen and (max-width: $maxWidth) {
+    @content;
+  }
+}

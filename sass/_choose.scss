@@ -1,0 +1,10 @@
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  & select {
+    margin-left: 10px;
+    padding: 5px 10px;
+  }
+}

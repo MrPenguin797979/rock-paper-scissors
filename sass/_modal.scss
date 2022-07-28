@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  &-content {
+    max-width: 300px;
+    width: 100%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.6)
+    );
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #252525;
+  }
+}
