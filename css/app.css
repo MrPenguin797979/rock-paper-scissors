@@ -108,6 +108,11 @@ body {
   align-items: center;
   column-gap: 20px;
 }
+@media screen and (max-width: 767px) {
+  .cards {
+    column-gap: 10px;
+  }
+}
 
 .card {
   max-width: 150px;
@@ -120,11 +125,6 @@ body {
   pointer-events: none;
 }
 
-@media screen and (max-width: 767px) {
-  .cards {
-    column-gap: 10px;
-  }
-}
 .result {
   display: flex;
   align-items: center;

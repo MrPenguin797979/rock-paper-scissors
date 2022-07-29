@@ -5,8 +5,8 @@
   -webkit-background-clip: text;
 }
 
-@mixin maxWidth($maxWidth) {
-  @media screen and (max-width: $maxWidth) {
+@mixin maxWidth($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
     @content;
   }
 }

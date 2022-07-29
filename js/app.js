@@ -32,7 +32,7 @@ difficulty.addEventListener("change", () => {
 
 function handleShowResult(userChoose, computerChoose, result) {
   result = result.replace(result[0], result[0].toUpperCase());
-  if (result !== "draw") result = `You ${result}`;
+  if (result !== "Draw") result = `You ${result}`;
 
   const template = `
     <div class="result">
@@ -98,30 +98,30 @@ function handleClickItem(e) {
   let computerScoreValue = parseInt(computerScore.textContent);
 
   if (dataItem === randomData) {
-    handleShowResult(dataItem, randomData, "Draw");
+    handleShowResult(dataItem, randomData, "draw");
   } else {
     if (dataItem === "rock") {
       if (randomData === "paper") {
-        handleShowResult(dataItem, randomData, "Lose");
+        handleShowResult(dataItem, randomData, "lose");
         --userScoreValue;
       } else {
-        handleShowResult(dataItem, randomData, "Win");
+        handleShowResult(dataItem, randomData, "win");
         --computerScoreValue;
       }
     } else if (dataItem === "paper") {
       if (randomData === "scissors") {
-        handleShowResult(dataItem, randomData, "Lose");
+        handleShowResult(dataItem, randomData, "lose");
         --userScoreValue;
       } else {
-        handleShowResult(dataItem, randomData, "Win");
+        handleShowResult(dataItem, randomData, "win");
         --computerScoreValue;
       }
     } else if (dataItem === "scissors") {
       if (randomData === "rock") {
-        handleShowResult(dataItem, randomData, "Lose");
+        handleShowResult(dataItem, randomData, "lose");
         --userScoreValue;
       } else {
-        handleShowResult(dataItem, randomData, "Win");
+        handleShowResult(dataItem, randomData, "win");
         --computerScoreValue;
       }
     }
@@ -132,7 +132,6 @@ function handleClickItem(e) {
 
   const newUserValue = parseInt(userScore.textContent);
   const newComputerValue = parseInt(computerScore.textContent);
-  const result = document.querySelector(".result");
 
   if (newUserValue === 0 && newComputerValue === 0) {
     handleCreateModal("draw");
